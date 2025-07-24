@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery | Discovery Land Company</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #faf8f4;
+      color: #282828;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem 1rem 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      font-size: 1.1rem;
+      padding: 0.5rem 1.2rem;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      color: #282828;
+      transition: border-bottom 0.2s, color 0.2s;
+    }
+
+    nav button.active,
+    nav button:hover {
+      border-bottom: 2.5px solid #bda36b;
+      color: #bda36b;
+    }
+
+    section {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    section span {
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #bea872;
+      transition: color 0.2s;
+    }
+
+    section span:hover {
+      color: #282828;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 2rem auto 1rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .navigation span {
+      font-size: 2rem;
+      cursor: pointer;
+      color: #282828;
+      opacity: 0.5;
+      transition: opacity 0.2s;
+    }
+
+    .navigation span:hover {
+      opacity: 1;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+      gap: 1.2rem;
+      padding: 1.8rem 1.5rem;
+      box-sizing: border-box;
+    }
+
+    main img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      background: #eee;
+    }
+
+    @media (max-width: 750px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .navigation {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      section {
+        gap: 0.8rem;
+        font-size: 1.2rem;
+        flex-wrap: wrap;
+      }
+
+      main {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 0.7rem;
+      }
+
+      main img {
+        height: 110px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gallery</h1>
+
+    <nav>
+      <button class="active">Landscapes</button>
+      <button>Golf</button>
+      <button>Wellness</button>
+      <button>Outdoor Pursuits</button>
+      <button>Clubhouses</button>
+      <button>Lifestyle</button>
+    </nav>
+
+    <section>
+      <span title="Moon">&#127769;</span>
+      <span title="Compass">&#129517;</span>
+      <span title="Pip">&#11044;</span>
+      <span title="Sun">&#9728;&#65039;</span>
+      <span title="Wind">&#127788;</span>
+    </section>
+  </header>
+
+  <div class="navigation">
+    <span title="Previous">&#8592;</span>
+    <span></span>
+    <span title="Next">&#8594;</span>
+  </div>
+
+  <main>
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Mountain Lake">
+    <img src="https://images.unsplash.com/photo-1465101178521-c1a9136a3fd8?auto=format&fit=crop&w=400&q=80" alt="Golf Course">
+    <img src="https://images.unsplash.com/photo-1519864600265-abb23847ef2c?auto=format&fit=crop&w=400&q=80" alt="Wellness Spa">
+    <img src="https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?auto=format&fit=crop&w=400&q=80" alt="Outdoor Adventure">
+    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Clubhouse">
+    <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80" alt="Lifestyle">
+  </main>
+
+</body>
+</html>
